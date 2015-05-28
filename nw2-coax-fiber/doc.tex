@@ -21,7 +21,7 @@
 \newcommand{\VARtitle}{NW2}
 \newcommand{\VARauthor}{Janeczek}
 
-\title{Vergleich Koaxialkabel und Glasfaserkabel \\ \VARtitle}
+\title{Koaxialkabel und Glasfaserkabel \\ \VARtitle}
 \author{\VARauthor}
 \date{\today{}, Vienna}
 
@@ -73,83 +73,95 @@
 
 \section{Vorwort}
 
-In diesem Dokument wird eine meiner naturwissenschaftlichen Thematiken ausgearbeitet. Es handelt sich um den Fachbereich der Kommunikationstechnik. Ich werde euch einen wesentlichen Überblick bezüglich dem Aufbau und der Funktionsweise von Koaxial- und Glasfaserkabeln, sowie einem Gegenüberstellung geben.
+In diesem Dokument wird eine meiner naturwissenschaftlichen Thematiken ausgearbeitet. Es handelt sich um den Fachbereich der Kommunikationstechnik. Ich werde euch einen wesentlichen Überblick bezüglich dem Aufbau und der Funktionsweise von Koaxial- und Glasfaserkabeln, sowie einer Gegenüberstellung dieser geben.
 
-\section{Koaxialkabel}
+\section{Koaxialkabel \cite{koaxialkabel}} 
 
 \subsection{Begriffserklärung}
 \textbf{Was ist ein Koaxialkabel?}\\
-Unter einem Koaxialkabel oder Koaxialleitungen versteht man Bus- oder Ring-Verkabelungen, die lange Zeit in der Netzwerktechnik eingesetzt wurden. Durchgesetzt haben sich jedoch strukturierte Stern-Verkabelungen auf Basis von Twisted-Pair-Kabel.\\
+Unter einem Koaxialkabel oder Koaxialleitungen versteht man Bus- oder Ring-Verkabelungen, die lange Zeit in der Netzwerktechnik eingesetzt wurden. Durchgesetzt haben sich jedoch strukturierte Stern-Verkabelungen auf Basis von Twisted-Pair-Kabel. \\ \\Im Grundlegenden spricht man bei der Verwendung eines Koaxialkabels von elektrischen Signalen/Daten, die meist in Kupferleitungen als Elektronen von Sender zum Empfänger geschickt werden.
+
+\subsection{Aufbau eines Koaxialkabels}
+\textbf{Wie ist ein Koaxialkabel aufgebaut?}\\
+Der Kern des Koaxialkabels ist der sogenannte Innenleiter (meist eine Kupferader, bzw. ein gut leitendes Metall). Dieser Kern wird von einer Isolationsschicht umhüllt, die meist aus Kunststoff oder ähnlichem besteht. Dem Kabel wird dadurch zusätzliche mechanische Stabilität gegeben.\\ \\ Um der Isolationsschicht herum befindet sich ein Schirmgeflecht als Außenleiter. Wenn nun an diesem Leiter eine Spannung angelegt wird, entsteht das elektrische Feld nur zwischen dem Außen- und Innenleiter. Es tritt also kein Magnetfeld außerhalb des Kabels auf. \\ \\
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{images/ozon}
-	\caption{Mesomere Grenzstrukturen des Ozonmoleküls}
+	\includegraphics[width=0.6\textwidth]{images/coax-aufbau}
+	\caption{Illustration des Aufbaus eines Koaxialkabels \cite{koax-img}}
 \end{figure}
 
-\subsection{Entstehung}
-\textbf{Wie bildet sich Ozon?}\\
-Prinzipiell sind uns drei Arten der Entstehung von Ozon bekannt:
-\subsubsection{Entstehung durch Sauerstoff}
-Ozon entsteht an sich aus gewöhnlichem Sauerstoff und einiger Vorläufersubstanzen (Kohlenwasserstoffe VOC und Stickstoffdioxid NO2). Je mehr VOC und NO2 in der Luft vorkommen und je stärker die Sonne scheint, umso mehr Ozon wird gebildet. Im Wesentlichen ist der Straßenverkehr für die Bildung von Ozon verantwortlich (NO2 kommt weitgehend aus dem motorisiertem Verkehr, VOC aus dem motorisierten Verkehr, Industrie, Gewerbe, Haushalte). 
-\subsubsection{Enstehung durch energiereiche Sonnenstrahlung}
-Die in der Stratosphäre (~50km) befindlichen Sauerstoff-Moleküle werden in zwei einzelne Sauerstoff-Partikel gespalten. Diese vereinigen sich mit anderen Sauerstoff-Molekülen wieder zu Ozon.
-\subsubsection{Entstehung durch Gewitter}
-Durch den eelektrischen Stromfluss zwischen Wolke und Erdboden entsteht bei der Blitzentladung Ozon sowie andere Schadstoffe (z.B. Salpetersäure).
-
 \newpage
-\subsection{Auswirkungen}
-\textbf{Welche Auswirkungen hat Ozon?}\\
-In hohen Konzentrationen gefährdet Ozon die Gesundheit von Menschen, Tieren und Pflanzen. Ozon an sich ist schlecht wasserlöslich, dringt tief in die Lungen ein und kann dort Zellreizungen hervorrufen. Das Element greift aufgrund seiner stark oxidierenden, aggressiven Eigenschaften auch Sachgüter an. Nach Kohlendioxid und Methan trägt Ozon als drittwichtigstes anthrophogene (=von Menschen verursacht, entstanden, ...) Gas zur Klimaerwärmung bei. \\
+Der Außenleiter dient als Antenne und schirmt elektromagnetische Strahlen ab. Außerdem
+beeinflussen Störungen von außen (Magnetfelder, die von anderen unter Spannung stehenden Kabeln erzeugt werden) den Signalfluss im Innenleiter und aus diesem Grund muss der
+Außenleiter an Erde gelegt werden. Somit wird die elektrische Feldverteilung wirksam. Das bereits erwähnte Schirmgeflecht ist eine allseitig geschlossene Hülle, die als elektrische Abschirmung  für das Kabel wirkt.
 
-Eintreffende Ultraviolettstrahlung/UV-Photonen schädigen außerdem die DNA und beschädigte Hautzellen sind Krebszellen.
+\subsection{Vorteile gegenüber Twisted-Pair-Kabel}
+Ein Twisted-Pair-Kabel ist ein Kabel, bei dem die einzelnen Teilkabeln paarweise miteinander verdrillt wurden. Diese paarweise Verseilung und ein elektrisch leitender Schirm vermindern störende Einflüsse von äußeren magnetischen Wechselfeldern. Ebenso wird das Übersprechen zwischen benachbarten
+Adernpaaren innerhalb des Kabels reduziert.\\ \\
+\textbf{Welche Vorteile hat das Koaxialkabel gegenüber dem Twisted-Pair-Kabel?}
+\begin{itemize}
+\item Es können keine Störspannungen durch Influenz in das Kabel gelangen
+\item Die im Kabel fließenden Ströme erzeugen keine magnetischen Störfelder.
+\end{itemize}
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.8\textwidth]{images/dna}
-	\caption{UV-Photonen schädigen die DNA}
-\end{figure}
+\subsection{Anwendungen des Koaxialkabels}
+Das Koaxialkabel wurde häufig als Netzwerkkabel verwendet, heutzutage eher selten, da der Lichtwellenleiter eine wesentlich größere Leistung erbringen kann. \\ \\
+Desweiteren finden Koaxialkabel als Antennenkabel oder für die Übertragung von TV und Radio (Rundfunk/Broadcast) Einsatz.
 
-\textbf{Wie profitieren wir von Ozon?}\\
-Bisher wurden nur Nachteile des aggressiven Gases genannt. Die Sache ist nämlich, dass wir ohne Ozon nicht leben könnten.\\ \\ Hierfür ist die sogenannte Ozonschicht, die sich in der Stratosphäre befindet und sich über 20km Dicke erfreut, verantwortlich. Dieses von unserem Planeten entfernte Ozon umhüllt die Erde wie ein gigantischer Schutzschild und schirmt unseren Planeten vor dem gefährlichen Ultraviolettstrahlen der Sonne ab. Ohne der Ozonschicht wären wir also neben Sonnendbränden auch von Hautkrebs und Schädigungen der Augen gefährdet. \\ \\
-Ozon ist lichtempfindlicher als das uns bekannte Sauerstoff-Molekül O2. Es absorbiert UV-C und UV-B und schützt damit jegliche Lebensform vor Strahlungsschäden. \\ \\
-Wenn ein Ozon Molekül ein UV-Photon absorbiert, wird es gespalten, aber in den allermeisten Fällen bildet das freigesetzte O-Partikel sofort wieder Ozon. \\
+\section{Lichtwellenleiter \cite{lwl}}
 
-\newpage
-\begin{center}
-Das Sauerstoff-Molekül wird durch Sonnenstrahlen gespalten. \\
-\ce{O2 ->C[hv] O + O} \\
-Die dadurch entstandenen Sauerstoff-Partikel bilden mit Sauerstoff-Molekülen wieder Ozon. \\
-\ce{O + O2 -> O3} \\
-Aufspaltung des Ozons + Rückbildung \\
-\ce{O3 ->C[hv] O2 + O} \\
-\end{center}
-
-\section{Ozonloch}
 \subsection{Begriffserklärung}
-Über der Antarktis (und neuerdings über der Arktis) stellt sich seit 15 Jahren zu bestimmten Zeit des Jahres ein Verlust an straospährischem Ozon ein. Der Grund dafür sind menschengemacht Chemikalien, welche Chlor enthalten, insbesondere FCKWs (Fluor-Chlor-Kohlenwasserstoffe) aber auch Stickoxide(NOx). FCKWs sind ein weit verbreitetes Erzeugnis, welches in Kühlsystemen, Klimaanlagen, als Treibgas und Lösungsmittel Verwendung findet.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.65\textwidth]{images/ozondichte}
-	\caption{Ozonschichtdicke 1979 und 2007}
-\end{figure}
+\textbf{Was ist ein Lichtwellenleiter?}\\
+Unter einem Lichtwellenleiter oder auch als LWL/Glasfaser bekannt, versteht man alle licht-leitenden Leitungen, die entweder aus Glas-, Quarz- oder Kunststofffasern bestehen. Bei dem Koaxialkabel werden Daten als Elektronen gesendet, bei dem Lichtwellenleiter hingegen,
+übernehmen die Photonen (Lichtteilchen) diese Aufgabe. \\ \\
+Durch Lichtwellenleiter können optische Signale mit dem Einsatz von wenigen Verstärkern große Entfernungen überbrücken. Trotz weiter Strecken ist eine hohe Bandbreite aufgrund von mehreren, gleichzeitig gesendeten Lichtwellen mit unterschiedlicher Wellenlänge möglich. Das macht den Lichtwellenteiler zum Übertragungsmedium der Gegenwart und Zukunft. Da kommt ein Kupferkabel oder Funksystem einfach nicht heran. \\ \\
+Die Glasfaser zum Beispiel ist ein solcher Lichtwellenteiler, dessen Fasern aus deem Grundstoff Glas bestehen.
 
 \newpage
-\subsection{Vorgehensweise gegen das Ozonloch}
-Das Protokoll von Montreal, welches im Jahr 1987 unterzeichnet wurde, zielt auf die Begrenzung der FCKWs ab und will diese bis zum Jahre 2000 halbieren. Die industrielle Produktion vieler Hologen-Kohlenstoffe soll bis 2030 kontrolliert werden. Die wichtigsten FCKWs sollen ab Anfang 1995 nicht mehr produziert werden. \\
-Das wesentliche Problem ist, dass die Erholung des in der Stratosphäre befindlichen Ozons sehr viel Zeit in Anspruch nimmt (~30 bis 50 Jahre).
-\subsection{Ozonloch an den Polen}
-\textbf{Wieso ist das Ozonloch an den Poln am dünnsten?}\\
-Wiee bereits erläutert, gibt es Radikale, die deen Zerfall von Ozon beschleunigen. \\Einige davon sind natürlicher Herkunft, andere werden von uns Menschen in die Atmosphäre geblasen (z.B. Chlor). Ein Radkial zerstört mehrere Ozonmoleküle (im Bereich von 1:1000). \\Der Zyklus kann nur unterbrochen werden, wenn die Radikale eine feste Bindung eingehen, indem sie mit anderen Stoffen, wie zum Beispiel Stickstoffdioxid reagieren.
+\subsubsection{Prinzip der Übertragung}
+Das zu sendende Signal wird mittels Analog-Digital-Wandlung in ein elektrisches Signal umgewandelt,
+welches dann noch von einer Treiberstufe verstärkt wird. Damit das Prinzip des Lichtwellenleiters angewandet werden kann, müssen zunächst die elektrischen Signale in optische Signale umgewandelt werden. Dazu dienen spezielle Leuchtdioden oder Laserdioden. \\ \\
+Nach diesem Vorgang wird das Lichtsignal in den Lichtwellenleiter eingespeist. Am anderen Ende des LWLs werden die Lichtimpulse wieder in elektrische Signale umgewandelt. Dazu wird meist ein Fototransistor verwendet. Diese elektrischen Signale müssen nun wieder Digital-Analog umgewandelt werden. Die Daten werden dann in analoger Form verstärkt und an den Empfänger übergeben.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\textwidth]{images/ozonloch}
-	\caption{Bisher größte Ausdehnung des antarktischen Ozonlochs am 24. September 2006}
+	\includegraphics[width=1.0\textwidth]{images/lwl2}
+	\caption{Das Prinzip der Übertragung \cite{lwl-uebertragung-img}}
 \end{figure}
 
-Der Grund warum bei der Antarktis ein erhöhter Ozonabbau stattfindet, ist die enorme, die während der Polarnacht auftritt. \\ \\Aufgrund dieser Kälte werden einige Radikalverbindungen wieder getrennt, das bedeutet es sind mehr Radikale für die Zerstörung des Ozons übrig. Erst wenn diese 'Wolken', die wegen der Kälte entstanden sind, wieder verdampfen kann der Ozonabbau gedämpft werden. 
+\subsubsection{Aufbau eines Lichtwellenleiters}
+LWL aus Kunststoff haben meist einen Durchmesser von etwa 0,1mm und sind äußerst flexibel aber
+auch empfindlich. Der Faserkern (Kernglas) ist der zentrale Bereich eines Lichtwellenleiters, der zur
+Wellenführung des Lichts dient. Dieser Kern  besteht aus einem Material mit einem höhren Brechungsindex
+als der darüberliegende Mantel. An den Wänden im Inneren des LWLs findet eine Totalreflexion statt,
+sodass der Lichtstrahl nahezu verlustfrei um jede Ecke geleitet wird. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{images/lwl}
+	\caption{Illustration des Aufbaus eines Lichtwellenleiters \cite{lwl-img}}
+\end{figure}
+
+Das Mantelglas hat reflektierende Eigenschaften (transparentes Material), ist nicht leitend und hat keine metallischen
+Anteile. Buffering nennt man das Schutzmaterial, das auf dem Coating aufextrudiert ist. Es schützt
+das Kabel vor Umwelteinflüssen.
+
+\subsubsection{Vorteile gegenüber Kupferkabel}
+Der Einsatz von LWLs wird im wesentlichen durch diese Vorteile unterstrichen:
+\begin{itemize}
+\item Lichtwellenleiter können beliebig mit anderen Versorgungsleitungen parallel verlegt werden, es
+wirken keine elektromagnetischen Störeinflüsse.
+\item Wegen der optischen Übertragung existieren keine Störstrahlungen oder Masseprobleme
+\item Entfernungsbedingte Verluste durch Induktivitäten, Kapazitäten und Widerständen treten nicht
+auf
+\item Nahezu Frequenz-unabhängige Leitungsdämpfung der Signale
+\item Übertragungsraten sind durch mehrere Trägerwellen mit unterschiedlichen Wellenlängen
+(Farbspektrum) fast unbegrenzt erweiterbar, daher auch die hohe Bandbreite
+\end{itemize}
+Diese genannten Vorteile bringen aber auch einige Nachteile mit sich. Lichtwellenteiler sich an sich wesentlich teurer als Kupferleitungen. Die Kosten für Material und Montage sind um einiges höher. Kurz zusammengefasst: Der Einsatz von Glasfaserkabeln eignet sich besonders gut für große Strecken und schlägt somit die Kupferleitungen im Kampf der Kommunikationstechnik. \\ \\
+Betätigt man nun den Lichtschalter, geht das Licht für uns in Lichtgeschwindigkeit an. \\
+Die Ladungsträger können sich nicht mit Lichtgeschwindigkeit bewegen, da diese eine Masse besitzen. Eine Masse kann niemals auf Lichtgeschwindigkeit gebracht werden. Wenn man den Lichtschalter betätigen würde, würde die Masse der Elektronen ins Unendliche schreiten. Die Elektronen breiten sich wiederrum mit der Lichtgeschwindigkeit aus.
 \newpage
 \nocite{*}
 \bibliographystyle{plain}
